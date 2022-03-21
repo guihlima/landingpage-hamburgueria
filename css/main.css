@@ -1,0 +1,246 @@
+@import url(./header.css);
+
+@media (min-width: 10px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        height: 100% - 30%;
+        padding: 20px 0;
+    }
+    .main .section{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .main #section-home {
+        width: 100%;
+    }
+    .main #section-home .swiper{
+        /* width: 600px;
+        height: 300px; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        margin: 40px auto;
+    }
+
+    .main #section-home .swiper .swiper-wrapper{
+        /* padding: 0px 0; */
+        
+        
+    }
+
+    .main #section-home .swiper .swiper-wrapper .swiper-slide{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        height: 100%;
+        /* height: 300px; */
+        padding: 20px 0;
+    }
+
+    .main #section-home .swiper .swiper-slide img{
+        width: 70%;
+        /* padding: 20px; */
+    }
+
+    .main #section-home .swiper .swiper-slide input{
+        border: none;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color:#196774;
+        font-weight: 500;
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    .main #section-home .swiper .swiper-pagination{
+        position: absolute;
+        bottom: 0;
+    }
+
+
+
+    .main #section-home .swiper .swiper-button-next, 
+    .main #section-home .swiper .swiper-button-prev{
+        display: none;
+    }
+
+
+    .main #section-catalog{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main #section-catalog #catalog-title{
+        color: #90A19D;
+    }
+
+    .main #section-catalog #catalog-filter{
+        display: flex;
+        gap: 10px;
+    }
+
+    .main #section-catalog #catalog-filter input{
+        border: none;
+        padding: 5px 20px;
+        /* width: 100%; */
+        background: transparent;
+        border: 1px solid #EF6024;
+        border-radius: 10px;
+        /* color: #011640; */
+        color: #90A19D;
+    }
+
+    .main #section-catalog #catalog-filter input:first-child{
+        background-color: #F0941F;
+        color: #FFF;
+        border-color: #363432;
+    }
+
+    .main #section-catalog .grid-cards{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        row-gap: 30px;
+       
+    }
+
+    /* Card */
+    .main #section-catalog .grid-card{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: #EF6024;
+        border-radius: 10px;
+        position: relative;
+        /* color: #363432; */
+        margin: 0 auto;
+        color: #FFF;
+        
+    }
+
+    .main #section-catalog .grid-card img{
+        width: 70%;
+    }
+
+    .main #section-catalog .grid-card .card-name{
+        /* text-align: left; */
+    }
+
+    .main #section-catalog .grid-card .card-description{
+        /* width: 100%; */
+        /* text-align: left; */
+    }
+
+    .main #section-catalog .grid-card .card-cart{
+        border: 1px solid #EF6024;
+        font-size: 1.1rem;
+        color: #011640;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 50%;
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    /* Section Sobre */
+    .main #section-about{
+
+    }
+
+    .main #section-about #content-about{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .main #section-about #content-about img{
+        border-radius: 10px;
+    }
+
+    .main #section-about #about-us #about-title{
+        color: #90A19D;
+    }
+
+    .main #section-about #about-us #about-description{
+        color: #363432;
+    }
+
+    /* Section Contato */
+
+    .main #section-contact{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .main #section-contact #section-title{
+        color: #90A19D;
+    }
+    .main #section-contact form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* align-items: center; */
+    }
+
+    .main #section-contact form label{
+        display: flex;
+        flex-direction: column;
+        color: #363432;
+    }
+    .main #section-contact form label input{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        border: 1px solid #EF6024;
+        padding: 0 10px;
+    }
+
+    .main #section-contact form input[type=submit]{
+        border: none;
+        background: #196774;
+        padding: 15px;
+        border: 1px solid #EF6024;
+        border-radius: 10px;
+        /* color: #011640; */
+        color: #FFF;
+        font-weight: 500;
+        font-size: .9rem;
+    }
+
+    /* Footer */
+    .footer{
+        background-color: #363432;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+        color: #FFF;
+    }
+
+    .footer ul{
+        display: flex;
+        gap: 20px;
+        font-size: 1.3rem;
+        
+    }
+
+    .footer ul a{
+        color: #FFF;
+    }
+}

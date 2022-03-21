@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burguer</title>
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="header container">
+        <a href="#section-home" id="brand">Burger</a>
+        <nav class="nav">
+            
+            <ul id="nav-list">
+                <ion-icon name="close" id="btn-close"></ion-icon>
+                <li class="nav-item">
+                    <a href="#section-home">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section-catalog">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section-about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#section-contact">Contato</a>
+                </li>
+            </ul>
+
+            
+        </nav>
+        <ul id="menu-right">
+            <li>
+                <a href="">
+                    <ion-icon name="cart"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="person"></ion-icon>
+                </a>
+            </li>
+            <li id="menu-bars">
+                <ion-icon name="menu" ></ion-icon>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <section class="section" id="section-home">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="./img/img-slide-1.png" alt="">
+                        <input type="button" value="Compre já">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/img-slide-2.png" alt="">
+                        <input type="button" value="Compre já">
+                    </div>
+                    
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                </div>
+        </section>
+
+
+        <section id="section-catalog" class="section">
+            <h1 id="catalog-title">Nosso Catálogo</h1>
+            <div id="catalog-filter">
+                <input type="button" value="Todos">
+                <input type="button" value="Hamburgers">
+                <input type="button" value="Pizzas">
+                <input type="button" value="Bebidas">
+            </div>
+            <div class="grid-cards">
+                <div class="grid-card">
+                    <img src="./img/img-catalog-1.png" alt="">
+                    <h4 class="card-name">Novo big-burger</h4>
+                    <p class="card-description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="card-price">
+                        R$ 29,90
+                    </p>
+                    <ion-icon name="cart" class="card-cart"></ion-icon>
+                </div>
+                <div class="grid-card">
+                    <img src="./img/img-catalog-2.png" alt="">
+                    <h4 class="card-name">Pizza</h4>
+                    <p class="card-description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="card-price">
+                        R$ 49,90
+                    </p>
+                    <ion-icon name="cart" class="card-cart"></ion-icon>
+                </div>
+                <div class="grid-card">
+                    <img src="./img/img-catalog-3.png" alt="">
+                    <h4 class="card-name">Poção de Batatas fritas</h4>
+                    <p class="card-description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="card-price">
+                        R$ 19,90
+                    </p>
+                    <ion-icon name="cart" class="card-cart"></ion-icon>
+                </div>
+                <div class="grid-card">
+                    <img src="./img/img-catalog-4.png" alt="">
+                    <h4 class="card-name">Coca-cola latinha</h4>
+                    <p class="card-description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <p class="card-price">
+                        R$ 4,90
+                    </p>
+                    <ion-icon name="cart" class="card-cart"></ion-icon>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="section-about">
+            <div id="content-about">
+                <img src="./img/img-about.jpg" id="about-img"/>
+                <article id="about-us">
+                    <h1 id="about-title">Sobre Nós</h1>
+                    <p id="about-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quis modi soluta totam fugit enim. Quibusdam officiis nobis cumque quae! Commodi, debitis esse culpa quasi temporibus assumenda quae voluptates quo!
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="section-contact">
+            <h1 id="section-title">Entre em contato</h1>
+            <form action="">
+                <label for="name">
+                    Nome:
+                    <input type="text" id="name">
+                </label>
+
+                <label for="email">
+                    Seu email:
+                    <input type="email" name="email" id="email">
+                </label>
+                <label for="tel">
+                    Telefone:
+                    <input type="text" name="tel" id="tel">
+                </label>
+                <label for="msg">
+                    Sua mensagem:
+                    <input type="text" name="msg" id="msg">
+                </label>
+
+                <input type="submit" value="Enviar Mensagem">
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img src="#" alt="Logo">
+
+        <ul>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- Icones -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="./scripts/swiper-bundle.min.js"></script>
+    <script src="./scripts/swiper.js"></script>
+
+    <!-- Menu JS -->
+    <script src="./scripts/menu.js"></script>
+</body>
+</html>

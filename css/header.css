@@ -1,0 +1,83 @@
+@import url(./reset.css);
+
+@media (min-width: 10px){
+    .header{
+        background-color: #363432;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 10%;
+        font-size: 1.3rem;
+        position: fixed;
+        z-index: 10;
+    }
+    .header #brand{
+        color: #FFF;
+    }
+
+    #btn-close{
+        /* display: none; */
+        /* background-color: red; */
+        position: absolute;
+        z-index: 1000;
+    }
+
+    .header .nav{
+        /* position: static; */
+    }
+
+    .header .nav #nav-list{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 100px 30px;
+        background-color: #363432;
+        font-size: 1rem;
+        z-index: 100;
+        visibility: hidden;
+        width: 0;
+        height: 100vh;
+        transition: .10s;
+        overflow-y: hidden;
+    }
+
+    .header .nav #nav-list a{
+        color: #FFF;
+    }
+
+    .header #menu-right{
+        display: flex;
+        gap: 20px;
+        color: #FFF;
+    }
+
+    .header #menu-right a{
+        color: #FFF;
+    }
+
+    /* Ativar/Desativar menu */
+    .nav #nav-list.active{
+        visibility: visible;
+        width: 60%;
+    }
+
+    .nav #nav-list.active #btn-close{
+        /* display: block; */
+        position: absolute;
+        z-index: 1000;
+        color: #FFF;
+        top: 2%;
+        right: 5%;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 395px){
+
+}
